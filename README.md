@@ -17,8 +17,8 @@ In order to automate the creation of [OpenIndexMaps](https://openindexmaps.org/)
   It will create the GeoJSON files to deliver information for each index map. Here is the general structure of an OpenIndexMap GeoJSON:
 
   <img src="https://user-images.githubusercontent.com/66186715/109703921-a70fc100-7b5b-11eb-9013-5f31c9c38142.png" style="width:80%">
-
-​		The main difference between regular and irregular index maps is the “**coordinates**” property, 		which represents a geographic area. 
+  
+  The main difference between regular and irregular index maps is the “**coordinates**” property, 		which represents a geographic area. 
 
 ​		**1. For regular index maps** - [***regularbbox.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/regularbbox.ipynb)
 
