@@ -11,7 +11,6 @@ In order to automate the creation of [OpenIndexMaps](https://openindexmaps.org/)
   The csv file borrows some fields from the Geoportal’s metadata schema, “***GeoBlacklight***”, which includes “**Title**”, “**Bounding Boxes**” and “**Identifier**”. 
 
   
-
 - #### Python scripts
 
   It will create the GeoJSON files to deliver information for each index map. Here is the general structure of an OpenIndexMap GeoJSON:
@@ -20,16 +19,13 @@ In order to automate the creation of [OpenIndexMaps](https://openindexmaps.org/)
   
   The main difference between regular and irregular index maps is the “**coordinates**” property, 		which represents a geographic area. 
 
-​		**1. For regular index maps** - [***regularbbox.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/regularbbox.ipynb)
+  **1. For regular index maps** - [***regularbbox.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/regularbbox.ipynb)
 
-​			It directly queries the coordinates of bounding boxes from the csv files column 
+    It directly queries the coordinates of bounding boxes from the csv files column “**Bounding Box**”.           
 
-​            “**Bounding Box**”.           
+   **2. For irregular index maps -** [***countybbox.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/countybbox.ipynb)
 
-​		**2. For irregular index maps -** [***countybbox.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/countybbox.ipynb)
-
-​			In order to create the county-shape polygons, it needs to join the county GeoJSON based on the 			county name and fetch the coordinates. Therefore, it is necessary to convert the county Shapefile 			into GeoJSON first - [***countygeojson.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/countygeojson.ipynb). 
-
+    In order to create the county-shape polygons, it needs to join the county GeoJSON based on the county name and fetch the coordinates. Therefore, it is necessary to           convert the county Shapefile into GeoJSON first - [***countygeojson.ipynb***](https://github.com/YijingZhou33/indexmaps/blob/main/countygeojson.ipynb). 
 
 
 - #### Final products
